@@ -267,7 +267,9 @@ define(
                     }
 
                     // unable to use this.form, had to resort to direct call
-                    $('#simplepath_form').validate({});
+                    if ($('#simplepath_form').length > 0) {
+                        $('#simplepath_form').validate({});
+                    }
                 },
 
                 /**
